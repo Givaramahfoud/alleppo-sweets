@@ -39,7 +39,7 @@ export default function Contact() {
                     <Label  className="mr-sm-2">Message</Label>
                     <Input type="textarea" name="text" id="exampleText" />
                 </FormGroup>
-                <Button className='mt-3'>Submit</Button>
+                <Button className='mt-3 bg-dark'>Submit</Button>
             </Form>
         </div>
     )
