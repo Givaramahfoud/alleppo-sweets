@@ -1,3 +1,9 @@
+.body{
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(235, 233, 225);
+}
+
 .App {
   text-align: center;
 }
@@ -38,11 +44,7 @@
   }
 }
 
-.header{
-    margin-left: 20px;
-}
-
-.footer{
+.footer {
   margin-top: 555px;
   display: flex;
   justify-items: center;
@@ -50,3 +52,80 @@
   background-color: #282c34;
   padding: 20px;
 }
+
+.openSlide {
+  min-width: 350px;
+}
+
+.cardStyle {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   justify-content: center;
+   margin: 15px 5px 10px 5px;
+}
+
+.openSlide2 {
+  display: flex;
+  min-width: 350px;
+}
+
+.cardStyle2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 15px 5px 10px 5px;
+}
+
+.openSlide3 {
+  display: flex;
+  min-width: 350px;
+}
+
+.cardStyle3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 15px 5px 10px 5px;
+}
+
+/* @media screen and (min-width: 375px) and (max-width: 667px) {
+  .cardStyle {
+    color: red;
+    display: inline;
+  }
+} */
+
+/* Contact page */
+
+/* .contactUs{
+  background-color: #e7d74a;
+  margin-top: 20px;
+} */
+
+.form{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 60px;
+  padding: 20px;
+  background-color: #f19a72;
+  border-radius: 20px;
+   text-align: center;
+}
+
+label{
+color: rgb(15, 1, 1);
+margin: 5px;
+}
+
+#exampleText{
+/* width: 450px; */
+}
+
+#exampleEmail{
+  /* width: 450px; */
+}
+
