@@ -27,9 +27,7 @@ export default function Contact() {
                     </NavItem>
                 </Nav>
             </Navbar>
-            {/* <h3 className='contactUs'>Contact us</h3> */}
             <Form className='form' >
-            {/* <Label>Contact Us</Label> */}
                 <h3 className='contactUs'>Contact us</h3>
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                     <Label for="exampleEmail" className="mr-sm-2">Email</Label>

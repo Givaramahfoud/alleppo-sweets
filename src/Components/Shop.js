@@ -11,13 +11,26 @@ import Salad from '../Pics/salad.jpg'
 export default function Shop() {
 
     const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
+    const toggle = (e) => {
+        //  document.querySelector('.openSlide').style.width = '100%'
+        setIsOpen(!isOpen);
+        setIsOpen2(!toggle2)
+        
+    }
 
     const [isOpen2, setIsOpen2] = useState(false);
-    const toggle2 = () => setIsOpen2(!isOpen2);
+    const toggle2 = (e) => {
+        // document.querySelector('.cards').style.
+        // document.querySelector('.openSlide2').style.width = '100%'
+        setIsOpen2(!isOpen2)
+        setIsOpen(!toggle)
+    };
 
     const [isOpen3, setIsOpen3] = useState(false);
     const toggle3 = () => setIsOpen3(!isOpen3);
+
+    const [isOpen4, setIsOpen4] = useState(false);
+    const toggle4 = () => setIsOpen4(!isOpen4);
 
     return (
         <div>
@@ -40,122 +53,174 @@ export default function Shop() {
 
             {/* the container of the Cards */}
             <div className='container'>
-                <CardDeck >
-                    <Row>
-                        <Col xxs='6' xs='6' md='4' >
-                            <Card>
+                <CardDeck className='cardDeck'  >
+                    {/* <Row> */}
+                    {/* <Col xxs='12' xs='6' md='4' > */}
+                    <Card className='cards' >
                                 <CardImg src={Salad} alt="Card image cap" />
-                                <CardBody >
+                                <CardBody>
                                     <CardTitle>Card title</CardTitle>
                                 </CardBody>
-
                                 <Button onClick={toggle}>Button</Button>
-                                <div className='openSlide'>
-                                    <Collapse isOpen={isOpen} >
-                                        <Row >
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle >Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle>Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle>Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </Collapse>
-                                </div>
-                            </Card>
 
-                        </Col>
-                        <Col xxs='6' xs='6' md='4'>
-                            <Card   >
+                                <Collapse isOpen={isOpen}>
+                                
+                                    <div className='openSlide'>
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle >Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                    </div>
+                                    
+                                </Collapse>
+                            </Card>
+                        {/* </Col> */}
+                        {/* <Col xxs='6' xs='6' md='4'> */}
+                    <Card className='cards'>
                                 <CardImg src={Salad} alt="Card image cap" />
                                 <CardBody>
                                     <CardTitle>Card title</CardTitle>
                                 </CardBody>
                                 <Button onClick={toggle2}>Button</Button>
-                                <div className='openSlide2'>
-                                    <Collapse isOpen={isOpen2} >
-                                        <Row >
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle2'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle >Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle2'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle>Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle2'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle>Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </Collapse>
-                                </div>
+
+                                <Collapse isOpen={isOpen2} >
+
+                                    <div className='openSlide'>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle >Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                    </div>
+                                </Collapse>
                             </Card>
-                        </Col>
-                        <Col xxs='6' xs='6' md='4'>
-                            <Card   >
+                        {/* </Col> */}
+                        {/* <Col xxs='6' xs='6' md='4'> */}
+                    <Card className='cards'>
                                 <CardImg src={Salad} alt="Card image cap" />
                                 <CardBody>
                                     <CardTitle>Card title</CardTitle>
                                 </CardBody>
                                 <Button onClick={toggle3}>Button</Button>
-                                <div className='openSlide2'>
-                                    <Collapse isOpen={isOpen3} >
-                                        <Row >
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle2'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle >Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle2'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle>Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                            <Col xxs='4' xs='4' sm="4" >
-                                                <div className='cardStyle2'>
-                                                    <CardImg src={Salad} alt="Card image cap" />
-                                                    <CardTitle>Title</CardTitle>
-                                                    <Button>Go somewhere</Button>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </Collapse>
-                                </div>
+
+                                <Collapse isOpen={isOpen3} >
+
+                                    <div className='openSlide'>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle >Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                    </div>
+                                </Collapse>
                             </Card>
-                        </Col>
+                        {/* </Col> */}
+                        {/* <Col xxs='6' xs='6' md='4'> */}
+                    <Card className='cards'>
+                                <CardImg src={Salad} alt="Card image cap" />
+                                <CardBody>
+                                    <CardTitle>Card title</CardTitle>
+                                </CardBody>
+                                <Button onClick={toggle4}>Button</Button>
 
-                    </Row>
+                                <Collapse isOpen={isOpen4} >
+
+                                    <div className='openSlide'>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle >Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+
+                                        <div className='cardStyle'>
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle>Title</CardTitle>
+                                            <Button>Go</Button>
+                                        </div>
+                                    </div>
+                                </Collapse>
+                            </Card>
+                        {/* </Col> */}
+
+                    {/* </Row> */}
                 </CardDeck>
-
             </div>
         </div>
     )
