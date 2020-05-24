@@ -38,7 +38,7 @@ const Home = (props) => {
 
 
             {/* Footer */}
-            <div color="dark" dark expand="md" className='footer'>
+            <div color="dark" expand="md" className='footer'>
                 <a href='https://www.facebook.com/'>  <FontAwesomeIcon icon={faFacebookSquare} color="#1777F2" /> </a>
                 <a href='https://www.twitter.com/'>  <FontAwesomeIcon icon={faTwitter} color="#33a7f4" /> </a>
                 <a href='https://www.instagram.com/'>   <FontAwesomeIcon icon={faInstagram} color="#CA5191" /> </a>

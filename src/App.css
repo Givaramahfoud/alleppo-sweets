@@ -28,29 +28,69 @@
 
  .cards {
    flex: 35%;
+   max-height: 225px;
    margin: 5px;
+ }
+
+ .open {
+   flex: 35%;
+   height: 40%;
+   margin: 5px;
+ }
+
+ .open2 {
+   flex: 35%;
+   height: fit-content;
+   margin: 5px;
+ }
+
+ .collapse {
+   background-color: rgb(235, 233, 225);
+   /* position: relative; */
+   height: 0%;
  }
 
  .openSlide {
    display: flex;
    flex-wrap: wrap;
-   width: 100%;
+   background-color: rgb(235, 233, 225);
+ }
+
+ .openSlide2 {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: rgb(235, 233, 225);
  }
 
  .cardStyle {
    flex: 25%;
    margin: 5px;
+   position: relative;
  }
 
- @media screen and (min-width: 600px) and (max-width: 800px) {
 
-   .cards {
-     flex: 30%;
+
+ @media screen and (min-width: 375px) and (max-width: 768px) {
+
+   .openSlide {
+     display: grid;
+     grid-template-columns: repeat(3, 70%);
+   }
+
+   .openSlide2 {
+     display: grid;
+     grid-template-columns: repeat(3, 70%);
+     position: relative;
+     right: 100%;
+
    }
 
    .cardStyle {
-     flex: 10%;
-     margin: 5px;
+     /* flex: 10%;  */
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     top: 10px;
+     right: 10%;
    }
  }
 
