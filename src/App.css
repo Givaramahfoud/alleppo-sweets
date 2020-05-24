@@ -46,7 +46,6 @@
 
  .collapse {
    background-color: rgb(235, 233, 225);
-   /* position: relative; */
    height: 0%;
  }
 
@@ -86,7 +85,6 @@
    }
 
    .cardStyle {
-     /* flex: 10%;  */
      display: grid;
      grid-template-columns: repeat(1, 1fr);
      top: 10px;
