@@ -38,12 +38,6 @@
    margin: 5px;
  }
 
- .open2 {
-   flex: 35%;
-   height: fit-content;
-   margin: 5px;
- }
-
  .collapse {
    background-color: rgb(235, 233, 225);
    height: 0%;
@@ -61,24 +55,43 @@
    background-color: rgb(235, 233, 225);
  }
 
+ .openSlide3 {
+   display: grid;
+   grid-template-columns: repeat(3, 30%);
+   justify-content: space-between;
+ }
+
  .cardStyle {
    flex: 25%;
    margin: 5px;
    position: relative;
+   display: grid;
+   align-items: center;
+   justify-items: center;
  }
 
 
 
  @media screen and (min-width: 375px) and (max-width: 768px) {
 
+
+
    .openSlide {
      display: grid;
      grid-template-columns: repeat(3, 70%);
    }
 
+   /* .cards {
+     background-color: red;
+     max-height: 225px;
+     margin: 5px;
+
+   } */
+
    .openSlide2 {
      display: grid;
      grid-template-columns: repeat(3, 70%);
+     /* grid-template-rows: repeat(2,40%); */
      position: relative;
      right: 100%;
 
