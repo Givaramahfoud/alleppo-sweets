@@ -6,26 +6,43 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faInstagram,
+    faTwitter,
+    faFacebookSquare,
+    faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
+
 export default function About() {
     return (
         <div>
-            <Navbar color="dark" dark expand="md"  >
-                <Nav  className='container'>
-                    <NavItem>
-                        <Link to="/">Home</Link>
+            {/* Header */}
+            <Nav className='headers'>
+                <div className='container navbar'>
+                    <NavItem >
+                        <Link to="/" style={{ textDecoration: 'none' }} className='navs' >Home</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/shop">Shop</Link>
+                        <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' >Shop</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/about">About</Link>
+                        <Link to="/about" style={{ textDecoration: 'none' }} className='navs' className='active'>About</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</Link>
                     </NavItem>
-                </Nav>
-            </Navbar>
-            <h3>About</h3>
+                </div>
+            </Nav>
+            <h1>About</h1>
+
+            {/* Footer */}
+            <div color="dark" expand="md" className='footer'>
+                <a href='https://www.facebook.com/'>  <FontAwesomeIcon icon={faFacebookSquare} color="#1777F2" /> </a>
+                <a href='https://www.twitter.com/'>  <FontAwesomeIcon icon={faTwitter} color="#33a7f4" /> </a>
+                <a href='https://www.instagram.com/'>   <FontAwesomeIcon icon={faInstagram} color="#CA5191" /> </a>
+                <a href='https://www.youtube.com/'>   <FontAwesomeIcon icon={faYoutube} color="#e5162f" /> </a>
+            </div>
         </div>
     )
 }

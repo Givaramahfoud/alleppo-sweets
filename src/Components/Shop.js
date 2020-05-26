@@ -6,6 +6,14 @@ import {
     Card, Button, CardImg, CardTitle, CardDeck, CardBody, Collapse
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faInstagram,
+    faTwitter,
+    faFacebookSquare,
+    faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import Salad from '../Pics/salad.jpg'
 
 
@@ -18,6 +26,14 @@ export default function Shop() {
         setIsOpen3(!toggle3)
         setIsOpen4(!toggle4)
         setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
     }
 
     const [isOpen2, setIsOpen2] = useState(false);
@@ -27,6 +43,14 @@ export default function Shop() {
         setIsOpen3(!toggle3)
         setIsOpen4(!toggle4)
         setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
     };
 
     const [isOpen3, setIsOpen3] = useState(false);
@@ -36,6 +60,14 @@ export default function Shop() {
         setIsOpen2(!toggle2)
         setIsOpen4(!toggle4)
         setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
     };
 
     const [isOpen4, setIsOpen4] = useState(false);
@@ -45,6 +77,14 @@ export default function Shop() {
         setIsOpen2(!toggle2)
         setIsOpen3(!toggle3)
         setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
     };
 
     const [isOpen5, setIsOpen5] = useState(false);
@@ -54,8 +94,153 @@ export default function Shop() {
         setIsOpen2(!toggle2)
         setIsOpen3(!toggle3)
         setIsOpen4(!toggle4)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
     };
 
+    const [isOpen6, setIsOpen6] = useState(false);
+    const toggle6 = () => {
+        setIsOpen6(!isOpen6)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
+    };
+
+    const [isOpen7, setIsOpen7] = useState(false);
+    const toggle7 = () => {
+        setIsOpen7(!isOpen7)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
+    };
+
+    const [isOpen8, setIsOpen8] = useState(false);
+    const toggle8 = () => {
+        setIsOpen8(!isOpen8)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
+    };
+
+    const [isOpen9, setIsOpen9] = useState(false);
+    const toggle9 = () => {
+        setIsOpen9(!isOpen9)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
+    };
+
+    const [isOpen10, setIsOpen10] = useState(false);
+    const toggle10 = () => {
+        setIsOpen10(!isOpen10)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
+    };
+
+
+
+    const [isOpen11, setIsOpen11] = useState(false);
+    const toggle11 = () => {
+        setIsOpen11(!isOpen11)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen12(!toggle12)
+        setIsOpen13(!toggle13)
+    };
+
+    const [isOpen12, setIsOpen12] = useState(false);
+    const toggle12 = () => {
+        setIsOpen12(!isOpen12)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen13(!toggle13)
+    };
+
+    const [isOpen13, setIsOpen13] = useState(false);
+    const toggle13 = () => {
+        setIsOpen13(!isOpen13)
+        setIsOpen(!toggle)
+        setIsOpen2(!toggle2)
+        setIsOpen3(!toggle3)
+        setIsOpen4(!toggle4)
+        setIsOpen5(!toggle5)
+        setIsOpen6(!toggle6)
+        setIsOpen7(!toggle7)
+        setIsOpen8(!toggle8)
+        setIsOpen9(!toggle9)
+        setIsOpen10(!toggle10)
+        setIsOpen11(!toggle11)
+        setIsOpen12(!toggle12)
+    };
     const [state] = useState({
 
         HelwNashef: [
@@ -108,37 +293,94 @@ export default function Shop() {
             'دوار الشمس',
             'مصري'
         ],
+
+        Coffee: [
+            'بدون هال',
+            'مع هال',
+            'هال اكسترا'
+        ],
+
+        Tmr: [
+            'تمر',
+            'تمر بالشوكولا'
+        ],
+
+        Schocola: [
+            'فيريرو',
+            'محشوة شوكولا بندق',
+            'محشوة شوكولا سائلة',
+            'محشوة فستق دوائر',
+            'محشوة فستق مربع',
+            'محشية لوز',
+            'محشية نستلة',
+            'محشية نسكافيه',
+            'مرّة'
+        ],
+
+        Mlabas: [
+            'ملبس لوز',
+            'شوكولا بايبي'
+        ],
+
+        Skaker: [
+            'كاراميلا',
+            'سميري',
+            'قضامة بسكر',
+            'شوكولا محجرة'
+        ],
+
+        NogaFstk: [''],
+
+        HrestAllwz: [
+            'ببرونة أزرق',
+            'ببرونة زهر',
+            'فراشة',
+            'فواكة',
+            'ملوكية',
+            'ورد أبيض',
+            'ورد أحمر',
+            'ورد أزرق',
+            'ورد زهر'
+        ],
+
+        Wifers: [
+            'شوكولا ساده',
+            'شوكولا مرّة'
+        ]
+
     })
 
     return (
         <div>
-            <Navbar color="dark" dark expand="md"  >
-                <Nav className='container'>
-                    <NavItem>
-                        <Link to="/">Home</Link>
+            {/* Header */}
+            <Nav className='headers '>
+                <div className='container navbar'>
+                    <NavItem >
+                        <Link to="/" style={{ textDecoration: 'none' }} className='navs' >Home</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/shop">Shop</Link>
+                        <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' className='active'>Shop</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/about">About</Link>
+                        <Link to="/about" style={{ textDecoration: 'none' }} className='navs'>About</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</Link>
                     </NavItem>
+                    </div>
                 </Nav>
-            </Navbar>
 
             {/* the container of the Cards */}
             <div className='container'>
-                <CardDeck className='cardDeck'>
-                    <Card className={isOpen ? 'open' : 'cards'} >
-                        <CardImg src={Salad} alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>حلو ناشف</CardTitle>
-                        </CardBody>
-                        <Button onClick={toggle} className='btn-light'>show more</Button>
-                        {/* <img src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png" className='icon' /> */}
+                <section className='cardDeck'>
+                    <div className={isOpen ? 'open' : 'cards'} >
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>حلو ناشف</p>
+
+                        <button onClick={toggle} className='btns btn-outline-danger'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen}>
 
@@ -146,23 +388,23 @@ export default function Shop() {
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button>Go</Button>
+                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        <Button className='btn-dark bg-dark' >select</Button>
                                     </div>
                                 ))}
                             </div>
 
                         </Collapse>
 
-                    </Card>
+                    </div>
 
 
 
-                    <Card className={isOpen2 ? 'open' : 'cards'}>
-                        <CardImg src={Salad} alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>راحة</CardTitle>
-                        </CardBody>
+                    <div className={isOpen2 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>راحة</p>
+
                         <Button onClick={toggle2} className='btn-light'>show more</Button>
 
                         <Collapse isOpen={isOpen2} >
@@ -172,21 +414,21 @@ export default function Shop() {
                                 {state.Raha.map(title => (
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button>Go</Button>
+                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
                                     </div>
                                 ))}
                             </div>
                         </Collapse>
-                    </Card>
+                    </div>
 
 
 
-                    <Card className={isOpen3 ? 'open' : 'cards'}>
-                        <CardImg src={Salad} alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>حلو عربي</CardTitle>
-                        </CardBody>
+                    <div className={isOpen3 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>حلو عربي</p>
+
                         <Button onClick={toggle3} className='btn-light'>show more</Button>
 
                         <Collapse isOpen={isOpen3} >
@@ -196,19 +438,19 @@ export default function Shop() {
                                 {state.HelwArabi.map(title => (
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button>Go</Button>
+                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
                                     </div>
                                 ))}
                             </div>
                         </Collapse>
-                    </Card>
+                    </div>
 
-                    <Card className={isOpen4 ? 'open' : 'cards'}>
-                        <CardImg src={Salad} alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>مكسرات</CardTitle>
-                        </CardBody>
+                    <div className={isOpen4 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>مكسرات</p>
+
                         <Button onClick={toggle4} className='btn-light'>show more</Button>
 
                         <Collapse isOpen={isOpen4} >
@@ -218,38 +460,220 @@ export default function Shop() {
                                 {state.Moksrat.map(title => (
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button>Go</Button>
+                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
                                     </div>
                                 ))}
                             </div>
                         </Collapse>
-                    </Card>
+                    </div>
 
-                    <Card className={isOpen5 ? 'open' : 'cards'}>
-                        <CardImg src={Salad} alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>بذورات</CardTitle>
-                        </CardBody>
+                    <div className={isOpen5 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>بذورات</p>
+
                         <Button onClick={toggle5} className='btn-light'>show more</Button>
 
-                        <Collapse isOpen={isOpen5} >
+                        <Collapse isOpen={isOpen5}>
 
-                            <div className='openSlide3'>
+                            <div className='openSlide' >
 
                                 {state.Bzorat.map(title => (
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle >{title}</CardTitle>
-                                        <Button>Go</Button>
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
                                     </div>
                                 ))}
                             </div>
                         </Collapse>
-                    </Card>
+                    </div>
 
-                </CardDeck>
+                    <div className={isOpen6 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
 
+                        <p className='titles'>قهوة</p>
+
+                        <Button onClick={toggle6} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen6}>
+
+                            <div className='openSlide2' >
+
+                                {state.Coffee.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen7 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>تمر</p>
+
+                        <Button onClick={toggle7} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen7}>
+
+                            <div className='openSlide3' >
+
+                                {state.Tmr.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen8 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>شوكولا</p>
+
+                        <Button onClick={toggle8} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen8}>
+
+                            <div className='openSlide2' >
+
+                                {state.Schocola.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen9 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>ملبس</p>
+
+                        <Button onClick={toggle9} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen9}>
+
+                            <div className='openSlide3' >
+
+                                {state.Mlabas.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen10 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>سكاكر</p>
+
+                        <Button onClick={toggle10} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen10}>
+
+                            <div className='openSlide2' >
+
+                                {state.Skaker.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen11 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>نوغا فستق</p>
+
+                        <Button onClick={toggle11} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen11}>
+
+                            <div className='openSlid' >
+
+                                {state.NogaFstk.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen12 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'>هريسة اللوز</p>
+
+                        <Button onClick={toggle12} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen12}>
+
+                            <div className='openSlide2' >
+
+                                {state.HrestAllwz.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+
+                    <div className={isOpen13 ? 'open' : 'cards'}>
+                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                        <p className='titles'> وايفرز</p>
+
+                        <Button onClick={toggle13} className='btn-light'>show more</Button>
+
+                        <Collapse isOpen={isOpen13}>
+
+                            <div className='openSlide3' >
+
+                                {state.Wifers.map(title => (
+                                    <div className='cardStyle'>
+                                        <CardImg src={Salad} alt="Card image cap" />
+                                        <CardTitle className='CardTitle'>{title}</CardTitle>
+                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapse>
+                    </div>
+                </section>
+            </div>
+
+            {/* Footer */}
+            <div color="dark" expand="md" className='footer'>
+                <a href='https://www.facebook.com/'>  <FontAwesomeIcon icon={faFacebookSquare} color="#1777F2" /> </a>
+                <a href='https://www.twitter.com/'>  <FontAwesomeIcon icon={faTwitter} color="#33a7f4" /> </a>
+                <a href='https://www.instagram.com/'>   <FontAwesomeIcon icon={faInstagram} color="#CA5191" /> </a>
+                <a href='https://www.youtube.com/'>   <FontAwesomeIcon icon={faYoutube} color="#e5162f" /> </a>
             </div>
         </div>
     )

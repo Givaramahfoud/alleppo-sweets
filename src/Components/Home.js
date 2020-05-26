@@ -19,22 +19,24 @@ const Home = (props) => {
 
         <div>
             {/* Header */}
-            <Navbar color="dark" dark expand="md"  >
-                <Nav className='container'>
+            <Nav className='headers'>
+                <div className='container navbar'>
                     <NavItem >
-                        <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
+                        <Link to="/" style={{ textDecoration: 'none' }} className='navs' className='active' >Home</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/shop" style={{ textDecoration: 'none' }}>Shop</Link>
+                        <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' >Shop</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/about" style={{ textDecoration: 'none' }}>About</Link>
+                        <Link to="/about" style={{ textDecoration: 'none' }} className='navs'>About</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/contact" style={{ textDecoration: 'none' }}>Contact</Link>
+                        <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</Link>
                     </NavItem>
-                </Nav>
-            </Navbar>
+                </div>
+            </Nav>
+
+            <h1>Home</h1>
 
 
             {/* Footer */}

@@ -1,128 +1,180 @@
- * {
-   box-sizing: border-box;
-   margin: 0%;
-   padding: 0%;
- }
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
 
- .body {
-   background-color: rgb(235, 233, 225);
- }
+.body {
+	background-color: rgb(235, 233, 225);
+}
 
- .App {
-   text-align: center;
- }
+.App {
+	text-align: center;
+}
 
- .footer {
-   margin-top: 555px;
-   display: flex;
-   justify-items: center;
-   justify-content: space-around;
-   background-color: #282c34;
-   padding: 20px;
- }
+.headers {
+	background-color: darkorange; 
+}
+.navs {
+	color: #fff;
+}
 
- .cardDeck {
-   display: flex;
-   flex-wrap: wrap;
- }
+.footer {
+	margin-top: 130px;
+	display: flex;
+	justify-items: center;
+	justify-content: space-around;
+	background-color: darkorange;
+	padding: 20px;
+	position: -webkit-sticky;
+	position: sticky;
+}
 
- .cards {
-   flex: 35%;
-   max-height: 225px;
-   margin: 5px;
- }
+.cardDeck {
+	display: flex;
+	flex-wrap: wrap;
+}
 
- .open {
-   flex: 35%;
-   height: 40%;
-   margin: 5px;
- }
+.cards {
+	flex: 20%;
+	/* max-height: 225px; */
+	margin: 5px;
+}
 
- .collapse {
-   background-color: rgb(235, 233, 225);
-   height: 0%;
- }
+.open {
+	flex: 20%;
+	/* height: 40%; */
+	margin: 5px;
+}
 
- .openSlide {
-   display: flex;
-   flex-wrap: wrap;
-   background-color: rgb(235, 233, 225);
- }
+.collapse {
+	background-color: rgb(235, 233, 225);
+}
 
- .openSlide2 {
-   display: flex;
-   flex-wrap: wrap;
-   background-color: rgb(235, 233, 225);
- }
+.openSlide {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(235, 233, 225);
+}
 
- .openSlide3 {
-   display: grid;
-   grid-template-columns: repeat(3, 30%);
-   justify-content: space-between;
- }
+.openSlide2 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(235, 233, 225);
+}
 
- .cardStyle {
-   flex: 25%;
-   margin: 5px;
-   position: relative;
-   display: grid;
-   align-items: center;
-   justify-items: center;
- }
+.openSlide3 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(235, 233, 225);
+}
+
+.cardStyle {
+	flex: 25%;
+	margin: 5px;
+	position: relative;
+	display: grid;
+	justify-items: center;
+}
+
+.titles {
+	font-size: 18px;
+	font-weight: bold;
+	color: darkorange;
+	/* background-color: rgb(241, 163, 35); */
+	border-bottom: 2px solid darkorange;
+	border-radius: 40px;
+	margin: 0px 35px;
+}
+
+.btns{
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+}
+
+.icons{
+  color: black;
+  background-color: transparent;
+  width: 60%;
+  outline: none;
+}
 
 
+.CardTitle {
+	font-size: 18px;
+	color: darkorange;
+	font-weight: bold;
+}
 
- @media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 775px) {
+	.cardDeck {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		justify-content: space-around;
+	}
 
+	.imgSize {
+		width: 150px;
+	}
 
+	.openSlide {
+		display: grid;
+		grid-template-columns: repeat(3, 70%);
+	}
 
-   .openSlide {
-     display: grid;
-     grid-template-columns: repeat(3, 70%);
-   }
+	.openSlide2 {
+		display: grid;
+		grid-template-columns: repeat(3, 70%);
+		position: relative;
+		right: 100%;
+	}
 
-   /* .cards {
-     background-color: red;
-     max-height: 225px;
-     margin: 5px;
+	.openSlide3 {
+		/* display: flex;
+		flex-wrap: wrap;
+		background-color: rgb(235, 233, 225);
+		position: relative;
+    left: 10%; */
+		display: grid;
+		grid-template-columns: repeat(2, 110%);
+	}
 
-   } */
+	.cardStyle {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		top: 10px;
+		right: 10%;
+	}
+}
 
-   .openSlide2 {
-     display: grid;
-     grid-template-columns: repeat(3, 70%);
-     /* grid-template-rows: repeat(2,40%); */
-     position: relative;
-     right: 100%;
+/* @media (max-width: 992px) {
+	.cardDeck {
+		display: flex;
+		background-color: red;
+	}
+} */
 
-   }
+/* Contact page */
 
-   .cardStyle {
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     top: 10px;
-     right: 10%;
-   }
- }
+.contactUs {
+	text-transform: uppercase;
+}
 
- /* Contact page */
+.form {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	margin: 80px;
+	padding: 40px;
+	background-color: rgb(250, 213, 127);
+	border-radius: 20px;
+	text-align: center;
+}
 
- .contactUs {
-   text-transform: uppercase;
- }
-
- .form {
-   display: grid;
-   justify-content: center;
-   justify-items: center;
-   margin: 60px;
-   padding: 20px;
-   background-color: #ff8247;
-   border-radius: 20px;
-   text-align: center;
- }
-
- label {
-   color: rgb(15, 1, 1);
-   margin: 5px;
- }
+label {
+	color: rgb(15, 1, 1);
+	margin: 5px;
+}
