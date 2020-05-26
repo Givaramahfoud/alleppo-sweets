@@ -378,7 +378,7 @@ export default function Shop() {
 
                         <p className='titles'>حلو ناشف</p>
 
-                        <button onClick={toggle} className='btns btn-outline-danger'>
+                        <button onClick={toggle} className='btns'>
                             <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
                         </button>
 
