@@ -38,7 +38,8 @@
 .cards {
 	flex: 20%;
 	/* max-height: 225px; */
-	margin: 5px;
+  margin: 5px;
+  
 }
 
 .open {
@@ -66,12 +67,12 @@
 .openSlide3 {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: rgb(235, 233, 225);
+  background-color: rgb(235, 233, 225);
 }
 
 .cardStyle {
 	flex: 25%;
-	margin: 5px;
+  margin: 5px;
 	position: relative;
 	display: grid;
 	justify-items: center;
@@ -91,7 +92,6 @@
   border: none;
   /* outline: none; */
   margin: 5px;
-  padding: 5px;
   background-color: transparent;
   color: black;
 }
@@ -101,11 +101,78 @@
   outline: none;
 }
 
+/* Hang */
+@-webkit-keyframes icons {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes icons {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+
+.icons {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.icons:hover,
+.icons:focus,
+.icons:active {
+  -webkit-animation-name: icons;
+  animation-name: icons;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .9s, 9.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 3, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
 .icons{
   color: black;
   background-color: transparent;
   width: 60%;
   outline: none;
+}
+
+.imgSize{
+  box-shadow: 1px 1px 4px 2px rgb(202, 196, 196);
 }
 
 
@@ -149,24 +216,17 @@
 	}
 
 	.cardStyle {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		display: grid; 
 		top: 10px;
 		right: 10%;
 	}
 }
 
-/* @media (max-width: 992px) {
-	.cardDeck {
-		display: flex;
-		background-color: red;
-	}
-} */
-
 /* Contact page */
 
 .contactUs {
-	text-transform: uppercase;
+  text-transform: uppercase;
+  color: darkorange;
 }
 
 .form {
@@ -175,12 +235,22 @@
 	justify-items: center;
 	margin: 80px;
 	padding: 40px;
-	background-color: rgb(250, 213, 127);
+	background-color: rgb(22, 20, 1);
 	border-radius: 20px;
 	text-align: center;
 }
 
+
 label {
-	color: rgb(15, 1, 1);
+	color: darkorange;
 	margin: 5px;
+}
+
+.contact-btn{
+  border: none;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  background-color: darkorange;
+  font-weight: bold;
 }

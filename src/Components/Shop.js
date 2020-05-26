@@ -405,7 +405,10 @@ export default function Shop() {
 
                         <p className='titles'>راحة</p>
 
-                        <Button onClick={toggle2} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle2} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen2} >
 
@@ -415,7 +418,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -429,7 +432,10 @@ export default function Shop() {
 
                         <p className='titles'>حلو عربي</p>
 
-                        <Button onClick={toggle3} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle3} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen3} >
 
@@ -439,7 +445,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -451,7 +457,10 @@ export default function Shop() {
 
                         <p className='titles'>مكسرات</p>
 
-                        <Button onClick={toggle4} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle4} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen4} >
 
@@ -461,7 +470,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -473,7 +482,10 @@ export default function Shop() {
 
                         <p className='titles'>بذورات</p>
 
-                        <Button onClick={toggle5} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle5} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen5}>
 
@@ -495,7 +507,10 @@ export default function Shop() {
 
                         <p className='titles'>قهوة</p>
 
-                        <Button onClick={toggle6} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle6} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen6}>
 
@@ -505,7 +520,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -517,7 +532,10 @@ export default function Shop() {
 
                         <p className='titles'>تمر</p>
 
-                        <Button onClick={toggle7} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle7} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen7}>
 
@@ -527,7 +545,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -539,7 +557,10 @@ export default function Shop() {
 
                         <p className='titles'>شوكولا</p>
 
-                        <Button onClick={toggle8} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle8} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen8}>
 
@@ -549,7 +570,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -561,7 +582,10 @@ export default function Shop() {
 
                         <p className='titles'>ملبس</p>
 
-                        <Button onClick={toggle9} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle9} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen9}>
 
@@ -571,7 +595,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -583,7 +607,10 @@ export default function Shop() {
 
                         <p className='titles'>سكاكر</p>
 
-                        <Button onClick={toggle10} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle10} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen10}>
 
@@ -593,7 +620,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -605,7 +632,10 @@ export default function Shop() {
 
                         <p className='titles'>نوغا فستق</p>
 
-                        <Button onClick={toggle11} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle11} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen11}>
 
@@ -615,7 +645,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -627,7 +657,10 @@ export default function Shop() {
 
                         <p className='titles'>هريسة اللوز</p>
 
-                        <Button onClick={toggle12} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle12} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen12}>
 
@@ -637,7 +670,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>
@@ -649,7 +682,10 @@ export default function Shop() {
 
                         <p className='titles'> وايفرز</p>
 
-                        <Button onClick={toggle13} className='btn-light'>show more</Button>
+
+                        <button onClick={toggle13} className='btns'>
+                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                        </button>
 
                         <Collapse isOpen={isOpen13}>
 
@@ -659,7 +695,7 @@ export default function Shop() {
                                     <div className='cardStyle'>
                                         <CardImg src={Salad} alt="Card image cap" />
                                         <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <Button className='btn-dark bg-dark'>select</Button>
                                     </div>
                                 ))}
                             </div>

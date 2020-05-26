@@ -40,13 +40,13 @@ export default function Contact() {
                 <h3 className='contactUs'>Contact us</h3>
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                     <Label for="exampleEmail" className="mr-sm-2">Email</Label>
-                    <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" />
+                    <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" className='input' />
                 </FormGroup>
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                     <Label className="mr-sm-2">Message</Label>
                     <Input type="textarea" name="text" id="exampleText" />
                 </FormGroup>
-                <Button className='mt-3 bg-dark'>Submit</Button>
+                <button className='contact-btn'>Submit</button>
             </Form>
 
             {/* Footer */}
