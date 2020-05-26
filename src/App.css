@@ -89,10 +89,16 @@
 
 .btns{
   border: none;
+  /* outline: none; */
   margin: 5px;
   padding: 5px;
   background-color: transparent;
   color: black;
+}
+
+.btns:hover{
+  border: none;
+  outline: none;
 }
 
 .icons{
