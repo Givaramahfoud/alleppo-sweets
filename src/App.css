@@ -5,7 +5,7 @@
 }
 
 .body {
-	background-color: rgb(235, 233, 225);
+	background: radial-gradient(#9d1c20 50%, #720b17 100%);
 }
 
 .App {
@@ -13,21 +13,33 @@
 }
 
 .headers {
-	background-color: darkorange; 
+	background-color: rgb(22, 20, 1);
+	display: flex;
+	justify-items: center;
+	justify-content: space-evenly;
+	padding: 10px;
+	position: sticky;
+	top: 0px;
 }
+
 .navs {
 	color: #fff;
 }
+
+.navs:hover {
+	color: #B0954A;
+}
+
 
 .footer {
 	margin-top: 130px;
 	display: flex;
 	justify-items: center;
 	justify-content: space-around;
-	background-color: darkorange;
+	background-color: rgb(22, 20, 1);
 	padding: 20px;
-	position: -webkit-sticky;
 	position: sticky;
+	bottom: 0px;
 }
 
 .cardDeck {
@@ -38,8 +50,8 @@
 .cards {
 	flex: 20%;
 	/* max-height: 225px; */
-  margin: 5px;
-  
+	margin: 5px;
+	width: fit-content;
 }
 
 .open {
@@ -49,116 +61,69 @@
 }
 
 .collapse {
-	background-color: rgb(235, 233, 225);
+	background: transparent;
 }
 
 .openSlide {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: rgb(235, 233, 225);
+	/* display: grid; 
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows: repeat(1,1fr);  */
+	/* width: 200%; */
+	background: transparent;
 }
 
 .openSlide2 {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: rgb(235, 233, 225);
+	background: transparent;
 }
 
 .openSlide3 {
 	display: flex;
 	flex-wrap: wrap;
-  background-color: rgb(235, 233, 225);
+	background: transparent;
 }
 
 .cardStyle {
-	flex: 25%;
-  margin: 5px;
-	position: relative;
+	flex: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	/* width: 100%; */
+	margin: 5px;
+	/* position: relative; */
 	display: grid;
 	justify-items: center;
+
 }
 
 .titles {
 	font-size: 18px;
 	font-weight: bold;
-	color: darkorange;
-	/* background-color: rgb(241, 163, 35); */
-	border-bottom: 2px solid darkorange;
-	border-radius: 40px;
-	margin: 0px 35px;
+	color: #F1DF8D;
+	background-color: black;
+	/* margin: 0px 45px; */
+	padding: 5px;
 }
 
-.btns{
-  border: none;
-  /* outline: none; */
-  margin: 5px;
-  background-color: transparent;
-  color: black;
+.btns {
+	border: none;
+	margin: 5px;
+	background-color: transparent;
+	color: black;
 }
 
-.btns:hover{
-  border: none;
-  outline: none;
+/* .btns:hover {
+	border: none;
+	outline: none;
+} */
+
+.imgSize {
+	box-shadow: 1px 1px 1px 1px rgb(202, 196, 196);
+	/* width: 70%;
+	height: 100px; */
 }
-
-/* Hang */
-
-@keyframes icons {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
-
-.icons {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.icons:hover,
-.icons:focus,
-.icons:active {
-  -webkit-animation-name: icons;
-  animation-name: icons;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .9s, 9.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 3, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
-.icons{
-  color: black;
-  background-color: transparent;
-  width: 60%;
-  outline: none;
-}
-
-.imgSize{
-  box-shadow: 1px 1px 4px 2px rgb(202, 196, 196);
-}
-
 
 .CardTitle {
 	font-size: 18px;
@@ -200,7 +165,7 @@
 	}
 
 	.cardStyle {
-		display: grid; 
+		display: grid;
 		top: 10px;
 		right: 10%;
 	}
@@ -209,8 +174,8 @@
 /* Contact page */
 
 .contactUs {
-  text-transform: uppercase;
-  color: darkorange;
+	text-transform: uppercase;
+	color: darkorange;
 }
 
 .form {
@@ -224,17 +189,16 @@
 	text-align: center;
 }
 
-
 label {
 	color: darkorange;
 	margin: 5px;
 }
 
-.contact-btn{
-  border: none;
-  margin: 10px;
-  padding: 5px;
-  width: 100px;
-  background-color: darkorange;
-  font-weight: bold;
+.contact-btn {
+	border: none;
+	margin: 10px;
+	padding: 5px;
+	width: 100px;
+	background-color: darkorange;
+	font-weight: bold;
 }

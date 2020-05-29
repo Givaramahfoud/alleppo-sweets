@@ -314,7 +314,9 @@ export default function Shop() {
             'محشية لوز',
             'محشية نستلة',
             'محشية نسكافيه',
-            'مرّة'
+            'مرّة',
+            'شوكولا ساده',
+            'شوكولا مرّة'
         ],
 
         Mlabas: [
@@ -353,47 +355,40 @@ export default function Shop() {
     return (
         <div>
             {/* Header */}
-            <Nav className='headers '>
-                <div className='container navbar'>
-                    <NavItem >
-                        <Link to="/" style={{ textDecoration: 'none' }} className='navs' >Home</Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' className='active'>Shop</Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="/about" style={{ textDecoration: 'none' }} className='navs'>About</Link>
-                    </NavItem>
-                    <NavItem>
-                        <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</Link>
-                    </NavItem>
-                    </div>
-                </Nav>
+            <div className=' headers '>
+
+                <a href="/" style={{ textDecoration: 'none' }} className='navs'>Home</a>
+
+                <a href="/shop" style={{ textDecoration: 'none' }} className='navs'>Shop</a>
+
+                <a href="/about" style={{ textDecoration: 'none' }} className='navs'>About</a>
+
+                <a href="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</a>
+
+            </div>
 
             {/* the container of the Cards */}
             <div className='container'>
                 <section className='cardDeck'>
+
                     <div className={isOpen ? 'open' : 'cards'} >
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>حلو ناشف</p>
-
                         <button onClick={toggle} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>حلو ناشف</p>
                         </button>
 
                         <Collapse isOpen={isOpen}>
-
                             <div className='openSlide'>
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark' >select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
-
                         </Collapse>
 
                     </div>
@@ -401,13 +396,13 @@ export default function Shop() {
 
 
                     <div className={isOpen2 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
 
-                        <p className='titles'>راحة</p>
 
 
                         <button onClick={toggle2} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>راحة</p>
                         </button>
 
                         <Collapse isOpen={isOpen2} >
@@ -425,16 +420,12 @@ export default function Shop() {
                         </Collapse>
                     </div>
 
-
-
                     <div className={isOpen3 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>حلو عربي</p>
-
 
                         <button onClick={toggle3} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>حلو عربي</p>
                         </button>
 
                         <Collapse isOpen={isOpen3} >
@@ -453,13 +444,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen4 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>مكسرات</p>
-
-
                         <button onClick={toggle4} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>مكسرات</p>
                         </button>
 
                         <Collapse isOpen={isOpen4} >
@@ -478,13 +466,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen5 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>بذورات</p>
-
-
                         <button onClick={toggle5} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>بذورات</p>
                         </button>
 
                         <Collapse isOpen={isOpen5}>
@@ -503,13 +488,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen6 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>قهوة</p>
-
-
                         <button onClick={toggle6} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>قهوة</p>
                         </button>
 
                         <Collapse isOpen={isOpen6}>
@@ -528,13 +510,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen7 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>تمر</p>
-
-
                         <button onClick={toggle7} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>تمر</p>
                         </button>
 
                         <Collapse isOpen={isOpen7}>
@@ -553,13 +532,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen8 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>شوكولا</p>
-
-
                         <button onClick={toggle8} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>شوكولا</p>
                         </button>
 
                         <Collapse isOpen={isOpen8}>
@@ -578,13 +554,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen9 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>ملبس</p>
-
-
                         <button onClick={toggle9} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>ملبس</p>
                         </button>
 
                         <Collapse isOpen={isOpen9}>
@@ -603,13 +576,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen10 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>سكاكر</p>
-
-
                         <button onClick={toggle10} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>سكاكر</p>
                         </button>
 
                         <Collapse isOpen={isOpen10}>
@@ -628,13 +598,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen11 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>نوغا فستق</p>
-
-
                         <button onClick={toggle11} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>نوغا فستق</p>
                         </button>
 
                         <Collapse isOpen={isOpen11}>
@@ -653,13 +620,10 @@ export default function Shop() {
                     </div>
 
                     <div className={isOpen12 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'>هريسة اللوز</p>
-
-
                         <button onClick={toggle12} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'>هريسة اللوز</p>
                         </button>
 
                         <Collapse isOpen={isOpen12}>
@@ -677,14 +641,11 @@ export default function Shop() {
                         </Collapse>
                     </div>
 
-                    <div className={isOpen13 ? 'open' : 'cards'}>
-                        <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
-
-                        <p className='titles'> وايفرز</p>
-
-
+                    {/* <div className={isOpen13 ? 'open' : 'cards'}>
                         <button onClick={toggle13} className='btns'>
-                            <img src="https://img.icons8.com/material/64/000000/circled-chevron-down--v1.png" className='icons' />
+                            <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
+
+                            <p className='titles'> وايفرز</p>
                         </button>
 
                         <Collapse isOpen={isOpen13}>
@@ -700,7 +661,7 @@ export default function Shop() {
                                 ))}
                             </div>
                         </Collapse>
-                    </div>
+                    </div> */}
                 </section>
             </div>
 
