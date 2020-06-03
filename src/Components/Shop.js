@@ -352,6 +352,11 @@ export default function Shop() {
 
     })
 
+    // const Test = () => {
+    //     const openSlide = document.querySelector('.openSlide')
+    //     openSlide.classList.toggle('openSlideTest')
+    // }
+
     return (
         <div>
             {/* Header */}
@@ -383,7 +388,7 @@ export default function Shop() {
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
                                         <button className='btns' >
-                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardImg src={Salad} alt="Card image cap" className='imgSize' width='50%' />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
                                         </button>
                                     </div>
@@ -393,11 +398,7 @@ export default function Shop() {
 
                     </div>
 
-
-
                     <div className={isOpen2 ? 'open' : 'cards'}>
-
-
 
                         <button onClick={toggle2} className='btns'>
                             <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
@@ -410,10 +411,13 @@ export default function Shop() {
                             <div className='openSlide2'>
 
                                 {state.Raha.map(title => (
-                                    <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                    <div className='cardStyle2'>
+                                        <button className='btns' >
+                                            {/* <div className='sml'> */}
+                                                <CardImg src={Salad} alt="Card image cap" className='imgSize' width='50%'/>
+                                                <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
+                                            {/* </div> */}
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -434,9 +438,10 @@ export default function Shop() {
 
                                 {state.HelwArabi.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -456,9 +461,10 @@ export default function Shop() {
 
                                 {state.Moksrat.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -478,9 +484,10 @@ export default function Shop() {
 
                                 {state.Bzorat.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>Go</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -500,9 +507,10 @@ export default function Shop() {
 
                                 {state.Coffee.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -522,9 +530,10 @@ export default function Shop() {
 
                                 {state.Tmr.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -544,9 +553,10 @@ export default function Shop() {
 
                                 {state.Schocola.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -566,9 +576,10 @@ export default function Shop() {
 
                                 {state.Mlabas.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -588,9 +599,10 @@ export default function Shop() {
 
                                 {state.Skaker.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -610,9 +622,10 @@ export default function Shop() {
 
                                 {state.NogaFstk.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -632,9 +645,10 @@ export default function Shop() {
 
                                 {state.HrestAllwz.map(title => (
                                     <div className='cardStyle'>
-                                        <CardImg src={Salad} alt="Card image cap" />
-                                        <CardTitle className='CardTitle'>{title}</CardTitle>
-                                        <Button className='btn-dark bg-dark'>select</Button>
+                                        <button className='btns' >
+                                            <CardImg src={Salad} alt="Card image cap" />
+                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        </button>
                                     </div>
                                 ))}
                             </div>

@@ -3,6 +3,7 @@ import {
     Navbar,
     Nav,
     NavItem,
+    Button,
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -15,11 +16,12 @@ import { Link } from 'react-router-dom'
 
 const Home = (props) => {
 
+
     return (
 
         <div>
             {/* Header */}
-            <div className=' headers '>
+            <div className='headers'>
 
                 <a href="/" style={{ textDecoration: 'none' }} className='navs'>Home</a>
 
@@ -30,9 +32,8 @@ const Home = (props) => {
                 <a href="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</a>
 
             </div>
-
-            <h1>Home</h1>
-
+           
+                <h1 className='homeActive'>Home</h1>
 
             {/* Footer */}
             <div color="dark" expand="md" className='footer'>

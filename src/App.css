@@ -27,9 +27,8 @@
 }
 
 .navs:hover {
-	color: #B0954A;
+	color: #b0954a;
 }
-
 
 .footer {
 	margin-top: 130px;
@@ -49,15 +48,13 @@
 
 .cards {
 	flex: 20%;
-	/* max-height: 225px; */
-	margin: 5px;
-	width: fit-content;
+	min-height: 100px;
+	margin: 10px;
 }
 
 .open {
 	flex: 20%;
-	/* height: 40%; */
-	margin: 5px;
+	margin: 10px;
 }
 
 .collapse {
@@ -67,17 +64,23 @@
 .openSlide {
 	display: flex;
 	flex-wrap: wrap;
-	/* display: grid; 
-	grid-template-columns: repeat(5,1fr);
-	grid-template-rows: repeat(1,1fr);  */
-	/* width: 200%; */
-	background: transparent;
+	justify-content: center;
+	width: 430%;
 }
 
 .openSlide2 {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	width: 400%;
+	transform: translateX(-24%);
 	background: transparent;
+}
+
+.cardStyle2 {
+	/* flex: 1%; */
+	flex-basis: 18%;
+	margin: 10px;
 }
 
 .openSlide3 {
@@ -87,21 +90,25 @@
 }
 
 .cardStyle {
-	flex: 2%;
+	/* flex: 10%; */
 	display: flex;
 	flex-wrap: wrap;
-	/* width: 100%; */
+	flex-basis: 180px;
 	margin: 5px;
-	/* position: relative; */
-	display: grid;
-	justify-items: center;
-
 }
+
+/* .sml {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100px;
+	justify-content: center;
+	margin: 2px;
+} */
 
 .titles {
 	font-size: 18px;
 	font-weight: bold;
-	color: #F1DF8D;
+	color: #f1df8d;
 	background-color: black;
 	/* margin: 0px 45px; */
 	padding: 5px;
@@ -109,49 +116,58 @@
 
 .btns {
 	border: none;
-	margin: 5px;
+	/* margin: 5px; */
 	background-color: transparent;
 	color: black;
 }
-
-/* .btns:hover {
-	border: none;
-	outline: none;
-} */
 
 .imgSize {
 	box-shadow: 1px 1px 1px 1px rgb(202, 196, 196);
 	/* width: 70%;
 	height: 100px; */
+	/* width: 320px; */
+}
+
+.smlImg {
+	width: 105%;
+	max-height: 100%;
 }
 
 .CardTitle {
-	font-size: 18px;
+	font-size: 16px;
 	color: darkorange;
 	font-weight: bold;
+	margin: 3px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 775px) {
+@media screen and (min-width: 320px) and (max-width: 776px) {
 	.cardDeck {
 		display: grid;
 		grid-template-columns: repeat(2, 50%);
-		justify-content: space-around;
+		/* justify-content: space-around; */
 	}
 
 	.imgSize {
-		width: 150px;
+		width: 100%;
 	}
 
 	.openSlide {
-		display: grid;
-		grid-template-columns: repeat(3, 70%);
+		display: flex;
+		flex-wrap: wrap;
+		width: 200%;
 	}
 
 	.openSlide2 {
-		display: grid;
-		grid-template-columns: repeat(3, 70%);
-		position: relative;
-		right: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		width: 200%;
+		transform: translateX(-50%);
+	}
+
+	.cardStyle2 {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 25%;
 	}
 
 	.openSlide3 {
@@ -159,17 +175,50 @@
 		flex-wrap: wrap;
 		background-color: rgb(235, 233, 225);
 		position: relative;
-    left: 10%; */
+        left: 10%; */
 		display: grid;
 		grid-template-columns: repeat(2, 110%);
 	}
 
 	.cardStyle {
+		flex: 30%;
 		display: grid;
 		top: 10px;
 		right: 10%;
 	}
 }
+@media screen and (min-width: 776px) and (max-width: 993px) {
+	.cardDeck {
+		/* display: grid;
+		grid-template-columns: repeat(3, 35%); */
+		/* background-color: red; */
+		/* justify-content: space-around; */
+	}
+	.openSlide {
+		display: flex;
+		flex-wrap: wrap;
+		width: 320%;
+	}
+	.openSlide2 {
+		display: flex;
+		flex-wrap: wrap;
+		width: 320%;
+	}
+
+	.cardStyle2 {
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 200px;
+		transform: translateX(-35%);
+	}
+}
+
+/* @media screen and (mim-width: 771px) {
+	.cardDeck {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+} */
 
 /* Contact page */
 
@@ -202,3 +251,16 @@ label {
 	background-color: darkorange;
 	font-weight: bold;
 }
+
+/* Home Page  */
+
+/* .slideIt {
+	transform: translateY(40%);
+	transition: transform 0.5s ease-in;
+	animation: fade 2s forwards;
+}
+
+.homeActive {
+	transform: translateY(10%);
+	background-color: #f1df8d;
+} */
