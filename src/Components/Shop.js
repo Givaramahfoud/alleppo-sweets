@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 import {
-    Navbar,
-    Nav,
-    NavItem,
-    Card, Button, CardImg, CardTitle, CardDeck, CardBody, Collapse
+    CardImg, CardTitle, Collapse
 } from 'reactstrap';
-import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -352,10 +348,6 @@ export default function Shop() {
 
     })
 
-    // const Test = () => {
-    //     const openSlide = document.querySelector('.openSlide')
-    //     openSlide.classList.toggle('openSlideTest')
-    // }
 
     return (
         <div>
@@ -414,8 +406,8 @@ export default function Shop() {
                                     <div className='cardStyle2'>
                                         <button className='btns' >
                                             {/* <div className='sml'> */}
-                                                <CardImg src={Salad} alt="Card image cap" className='imgSize' width='50%'/>
-                                                <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
+                                            <CardImg src={Salad} alt="Card image cap" className='imgSize' width='50%' />
+                                            <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
                                             {/* </div> */}
                                         </button>
                                     </div>
@@ -434,10 +426,10 @@ export default function Shop() {
 
                         <Collapse isOpen={isOpen3} >
 
-                            <div className='openSlide'>
+                            <div className='openSlide3'>
 
                                 {state.HelwArabi.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyle3'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
@@ -457,10 +449,10 @@ export default function Shop() {
 
                         <Collapse isOpen={isOpen4} >
 
-                            <div className='openSlide2'>
+                            <div className='openSlide4'>
 
                                 {state.Moksrat.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyle4'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
@@ -526,10 +518,10 @@ export default function Shop() {
 
                         <Collapse isOpen={isOpen7}>
 
-                            <div className='openSlide3' >
+                            <div className='openSlideTmr' >
 
                                 {state.Tmr.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyleTmr'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
@@ -549,10 +541,10 @@ export default function Shop() {
 
                         <Collapse isOpen={isOpen8}>
 
-                            <div className='openSlide2' >
+                            <div className='openSlide4' >
 
                                 {state.Schocola.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyle4'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
@@ -572,10 +564,10 @@ export default function Shop() {
 
                         <Collapse isOpen={isOpen9}>
 
-                            <div className='openSlide3' >
+                            <div className='openSlideTmr' >
 
                                 {state.Mlabas.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyleTmr'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
@@ -641,10 +633,10 @@ export default function Shop() {
 
                         <Collapse isOpen={isOpen12}>
 
-                            <div className='openSlide2' >
+                            <div className='openSlide4' >
 
                                 {state.HrestAllwz.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyle4'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>

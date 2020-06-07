@@ -1,10 +1,4 @@
 import React from 'react'
-import {
-    Navbar,
-    Nav,
-    NavItem,
-} from 'reactstrap';
-import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {

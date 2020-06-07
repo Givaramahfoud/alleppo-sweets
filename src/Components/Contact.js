@@ -1,10 +1,4 @@
 import React from 'react'
-import {
-    Navbar,
-    Nav,
-    NavItem,
-} from 'reactstrap';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faInstagram,
@@ -12,8 +6,7 @@ import {
     faFacebookSquare,
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom'
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 
 export default function Contact() {

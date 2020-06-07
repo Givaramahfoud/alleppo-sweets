@@ -1,10 +1,4 @@
 import React from 'react';
-import {
-    Navbar,
-    Nav,
-    NavItem,
-    Button,
-} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faInstagram,
@@ -12,7 +6,6 @@ import {
     faFacebookSquare,
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom'
 
 const Home = (props) => {
 
