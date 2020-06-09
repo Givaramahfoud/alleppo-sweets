@@ -20,6 +20,7 @@
 	padding: 10px;
 	position: sticky;
 	top: 0px;
+	z-index: 1;
 }
 
 .navs {
@@ -44,14 +45,15 @@
 .cardDeck {
 	display: flex;
 	flex-wrap: wrap;
+	min-height: 80vh;
+	width: 100%;
 }
 
 .cards {
 	flex: 20%;
 	min-height: 100px;
-	margin: 10px;
+	margin: 6px 10px;
 }
-
 
 .open {
 	flex: 20%;
@@ -147,11 +149,27 @@
 	color: black;
 }
 
-.imgSize{
-	box-shadow: 1px 1px 1px 1px rgb(202, 196, 196);
+.imgSize {
+	box-shadow: 3px 1px 3px 1px #720b17;
+	max-width: 190px;
+	height: 100px;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
-
+.imgSize:hover {
+	/* transform: rotate(-8deg);
+	transition: all 0.5s ease-in-out; */
+	-webkit-transform: scale(1.3) rotate(12deg);
+	transform: scale(1.3) rotate(-5deg);
+	width: 180px;
+}
 
 .CardTitle {
 	font-size: 16px;

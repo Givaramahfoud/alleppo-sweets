@@ -263,7 +263,7 @@ export default function Shop() {
 
         HelwArabi: [
             'مشكل',
-            'هريسة_نبكية',
+            'هريسة نبكية',
             'مبرومة',
             'بلورية'
         ],
@@ -379,9 +379,9 @@ export default function Shop() {
                             <div className='openSlide'>
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
-                                        <button className='btns' >
-                                            <CardImg src={Salad} alt="Card image cap" className='imgSize' width='50%' />
-                                            <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
+                                        <button className='btns'>
+                                            <CardImg src={Salad} alt="Card image cap" width='50%' />
+                                            <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
                                         </button>
                                     </div>
                                 ))}
@@ -405,10 +405,8 @@ export default function Shop() {
                                 {state.Raha.map(title => (
                                     <div className='cardStyle2'>
                                         <button className='btns' >
-                                            {/* <div className='sml'> */}
-                                            <CardImg src={Salad} alt="Card image cap" className='imgSize' width='50%' />
+                                            <CardImg src={Salad} alt="Card image cap" width='50%' />
                                             <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
-                                            {/* </div> */}
                                         </button>
                                     </div>
                                 ))}
@@ -471,9 +469,7 @@ export default function Shop() {
                         </button>
 
                         <Collapse isOpen={isOpen5}>
-
                             <div className='openSlide' >
-
                                 {state.Bzorat.map(title => (
                                     <div className='cardStyle'>
                                         <button className='btns' >
