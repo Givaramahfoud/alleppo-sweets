@@ -79,6 +79,20 @@
 	margin: 5px;
 }
 
+.openSlideBzorat {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 430%;
+}
+
+.cardStyleBzorat {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 180px;
+	margin: 5px;
+}
+
 .openSlide2 {
 	display: flex;
 	flex-wrap: wrap;
@@ -188,6 +202,12 @@
 		width: 100%;
 	}
 
+	.imgSize:hover {
+		-webkit-transform: scale(1.3) rotate(12deg);
+		transform: scale(1.1) rotate(-5deg);
+		width: 130px;
+	}
+
 	.openSlide {
 		display: flex;
 		flex-wrap: wrap;
@@ -195,6 +215,16 @@
 	}
 
 	.cardStyle {
+		flex: 30%;
+	}
+
+	.openSlideBzorat {
+		display: flex;
+		flex-wrap: wrap;
+		width: 210%;
+	}
+
+	.cardStyleBzorat {
 		flex: 30%;
 	}
 
@@ -252,6 +282,18 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: 320%;
+	}
+	.openSlideBzorat {
+		display: flex;
+		flex-wrap: wrap;
+		width: 220%;
+	}
+
+	.cardStyleBzorat {
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 130px;
+		transform: translateX(-100%);
 	}
 	.openSlide2 {
 		display: flex;

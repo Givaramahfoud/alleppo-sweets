@@ -469,9 +469,9 @@ export default function Shop() {
                         </button>
 
                         <Collapse isOpen={isOpen5}>
-                            <div className='openSlide' >
+                            <div className='openSlideBzorat' >
                                 {state.Bzorat.map(title => (
-                                    <div className='cardStyle'>
+                                    <div className='cardStyleBzorat'>
                                         <button className='btns' >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
