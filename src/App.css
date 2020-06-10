@@ -12,6 +12,8 @@
 	text-align: center;
 }
 
+/* ? Header */
+
 .headers {
 	background-color: rgb(22, 20, 1);
 	display: flex;
@@ -31,6 +33,7 @@
 	color: #b0954a;
 }
 
+/* ? Footer */
 .footer {
 	margin-top: 130px;
 	display: flex;
@@ -41,6 +44,8 @@
 	position: sticky;
 	bottom: 0px;
 }
+
+/* ! Shop Page */
 
 .cardDeck {
 	display: flex;
@@ -281,12 +286,6 @@
 }
 
 @media screen and (min-width: 776px) and (max-width: 993px) {
-	.cardDeck {
-		/* display: grid;
-		grid-template-columns: repeat(3, 35%); */
-		/* background-color: red; */
-		/* justify-content: space-around; */
-	}
 
 	.openSlide {
 		display: flex;
@@ -335,7 +334,7 @@
 	}
 }
 
-/* POPUP */
+/* ? POPUP */
 
 .popup {
 	display: flex;
@@ -355,10 +354,10 @@
 
 div.modal-content {
 	/* width: 85%; */
-	/* margin: 10px; */
 }
 
-/* Contact page */
+
+/* ! Contact page */
 
 .contactUs {
 	text-transform: uppercase;
@@ -390,7 +389,7 @@ label {
 	font-weight: bold;
 }
 
-/* Home Page  */
+/* ! Home Page  */
 
 /* .slideIt {
 	transform: translateY(40%);
