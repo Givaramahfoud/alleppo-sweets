@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-    CardImg, CardTitle, Collapse
+    CardImg, CardTitle, Collapse, Button, Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -237,6 +237,12 @@ export default function Shop() {
         setIsOpen11(!toggle11)
         setIsOpen12(!toggle12)
     };
+
+    const [modal, setModal] = useState(false);
+
+    const toggleModal = () => setModal(!modal);
+
+
     const [state] = useState({
 
         HelwNashef: [
@@ -370,6 +376,7 @@ export default function Shop() {
 
                     <div className={isOpen ? 'open' : 'cards'} >
                         <button onClick={toggle} className='btns'>
+
                             <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
 
                             <p className='titles'>حلو ناشف</p>
@@ -379,10 +386,24 @@ export default function Shop() {
                             <div className='openSlide'>
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
-                                        <button className='btns'>
+                                        <button className='btns' onClick={toggleModal}>
                                             <CardImg src={Salad} alt="Card image cap" width='50%' />
                                             <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
                                         </button>
+                                        <Modal isOpen={modal} toggleModal={toggleModal}  className='container'>
+                                            <ModalBody>
+                                                <CardImg src={Salad} alt="Card image cap" width='50%' />
+                                            </ModalBody>
+                                            <ModalFooter className='popup' >
+                                                <div className='popupCards'  onClick={toggleModal}>
+                                                    <CardImg src={Salad} alt="Card image cap" width='50%' />
+                                                    <CardImg src={Salad} alt="Card image cap" width='50%' />
+                                                    <CardImg src={Salad} alt="Card image cap" width='50%' />
+                                                </div>
+
+                                            </ModalFooter>
+                                            <Button color="light" onClick={toggleModal}>Cancel</Button>
+                                        </Modal>
                                     </div>
                                 ))}
                             </div>
@@ -484,6 +505,7 @@ export default function Shop() {
 
                     <div className={isOpen6 ? 'open' : 'cards'}>
                         <button onClick={toggle6} className='btns'>
+
                             <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
 
                             <p className='titles'>قهوة</p>
