@@ -11,6 +11,7 @@ import {
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import Salad from '../Pics/salad.jpg'
+import { Link } from 'react-router-dom';
 
 
 export default function Shop() {
@@ -360,13 +361,13 @@ export default function Shop() {
             {/* Header */}
             <div className=' headers '>
 
-                <a href="/" style={{ textDecoration: 'none' }} className='navs'>Home</a>
+                <Link to="/" style={{ textDecoration: 'none' }} className='navs'>Home</Link>
 
-                <a href="/shop" style={{ textDecoration: 'none' }} className='navs'>Shop</a>
+                <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' className='active'>shop</Link>
 
-                <a href="/about" style={{ textDecoration: 'none' }} className='navs'>About</a>
+                <Link to="/about" style={{ textDecoration: 'none' }} className='navs'>about</Link>
 
-                <a href="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</a>
+                <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>contact</Link>
 
             </div>
 

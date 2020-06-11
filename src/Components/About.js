@@ -7,6 +7,7 @@ import {
     faFacebookSquare,
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -14,13 +15,13 @@ export default function About() {
             {/* Header */}
             <div className=' headers '>
 
-                <a href="/" style={{ textDecoration: 'none' }} className='navs'>Home</a>
+                <Link to="/" style={{ textDecoration: 'none' }} className='navs' >Home</Link>
 
-                <a href="/shop" style={{ textDecoration: 'none' }} className='navs'>Shop</a>
+                <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' >shop</Link>
 
-                <a href="/about" style={{ textDecoration: 'none' }} className='navs'>About</a>
+                <Link to="/about" style={{ textDecoration: 'none' }} className='navs' className='active'>about</Link>
 
-                <a href="/contact" style={{ textDecoration: 'none' }} className='navs'>Contact</a>
+                <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>contact</Link>
 
             </div>
             <h1>About</h1>
