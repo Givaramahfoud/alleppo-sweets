@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/alleppo-sweets/static/css/main.591b8356.chunk.css",
-    "main.js": "/alleppo-sweets/static/js/main.7fdff002.chunk.js",
-    "main.js.map": "/alleppo-sweets/static/js/main.7fdff002.chunk.js.map",
+    "main.css": "/alleppo-sweets/static/css/main.3043d135.chunk.css",
+    "main.js": "/alleppo-sweets/static/js/main.d32b2fd2.chunk.js",
+    "main.js.map": "/alleppo-sweets/static/js/main.d32b2fd2.chunk.js.map",
     "runtime-main.js": "/alleppo-sweets/static/js/runtime-main.93125de0.js",
     "runtime-main.js.map": "/alleppo-sweets/static/js/runtime-main.93125de0.js.map",
     "static/css/2.de424728.chunk.css": "/alleppo-sweets/static/css/2.de424728.chunk.css",
-    "static/js/2.d3d8a4a4.chunk.js": "/alleppo-sweets/static/js/2.d3d8a4a4.chunk.js",
-    "static/js/2.d3d8a4a4.chunk.js.map": "/alleppo-sweets/static/js/2.d3d8a4a4.chunk.js.map",
+    "static/js/2.f81de96d.chunk.js": "/alleppo-sweets/static/js/2.f81de96d.chunk.js",
+    "static/js/2.f81de96d.chunk.js.map": "/alleppo-sweets/static/js/2.f81de96d.chunk.js.map",
     "index.html": "/alleppo-sweets/index.html",
-    "precache-manifest.a659d35c2dd98a37e178cc9ec1b7d143.js": "/alleppo-sweets/precache-manifest.a659d35c2dd98a37e178cc9ec1b7d143.js",
+    "precache-manifest.78de746bbc9534c3184e6c8c343c841c.js": "/alleppo-sweets/precache-manifest.78de746bbc9534c3184e6c8c343c841c.js",
     "service-worker.js": "/alleppo-sweets/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/alleppo-sweets/static/css/2.de424728.chunk.css.map",
-    "static/css/main.591b8356.chunk.css.map": "/alleppo-sweets/static/css/main.591b8356.chunk.css.map",
-    "static/js/2.d3d8a4a4.chunk.js.LICENSE.txt": "/alleppo-sweets/static/js/2.d3d8a4a4.chunk.js.LICENSE.txt",
+    "static/css/main.3043d135.chunk.css.map": "/alleppo-sweets/static/css/main.3043d135.chunk.css.map",
+    "static/js/2.f81de96d.chunk.js.LICENSE.txt": "/alleppo-sweets/static/js/2.f81de96d.chunk.js.LICENSE.txt",
     "static/media/salad.jpg": "/alleppo-sweets/static/media/salad.13f06f70.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.93125de0.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.d3d8a4a4.chunk.js",
-    "static/css/main.591b8356.chunk.css",
-    "static/js/main.7fdff002.chunk.js"
+    "static/js/2.f81de96d.chunk.js",
+    "static/css/main.3043d135.chunk.css",
+    "static/js/main.d32b2fd2.chunk.js"
   ]
 }
