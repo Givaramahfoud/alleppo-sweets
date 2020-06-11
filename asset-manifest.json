@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/alleppo-sweets/static/css/main.3043d135.chunk.css",
-    "main.js": "/alleppo-sweets/static/js/main.6a9ffd68.chunk.js",
-    "main.js.map": "/alleppo-sweets/static/js/main.6a9ffd68.chunk.js.map",
+    "main.js": "/alleppo-sweets/static/js/main.13e89380.chunk.js",
+    "main.js.map": "/alleppo-sweets/static/js/main.13e89380.chunk.js.map",
     "runtime-main.js": "/alleppo-sweets/static/js/runtime-main.93125de0.js",
     "runtime-main.js.map": "/alleppo-sweets/static/js/runtime-main.93125de0.js.map",
     "static/css/2.de424728.chunk.css": "/alleppo-sweets/static/css/2.de424728.chunk.css",
     "static/js/2.f81de96d.chunk.js": "/alleppo-sweets/static/js/2.f81de96d.chunk.js",
     "static/js/2.f81de96d.chunk.js.map": "/alleppo-sweets/static/js/2.f81de96d.chunk.js.map",
     "index.html": "/alleppo-sweets/index.html",
-    "precache-manifest.274ee35373bb951e79ffa3461333b4b3.js": "/alleppo-sweets/precache-manifest.274ee35373bb951e79ffa3461333b4b3.js",
+    "precache-manifest.3d320863df7825d1173cae3510eb4a52.js": "/alleppo-sweets/precache-manifest.3d320863df7825d1173cae3510eb4a52.js",
     "service-worker.js": "/alleppo-sweets/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/alleppo-sweets/static/css/2.de424728.chunk.css.map",
     "static/css/main.3043d135.chunk.css.map": "/alleppo-sweets/static/css/main.3043d135.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.f81de96d.chunk.js",
     "static/css/main.3043d135.chunk.css",
-    "static/js/main.6a9ffd68.chunk.js"
+    "static/js/main.13e89380.chunk.js"
   ]
 }

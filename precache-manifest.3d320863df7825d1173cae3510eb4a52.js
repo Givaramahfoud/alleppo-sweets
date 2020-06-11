@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d6b188062eb3b390a3883a44b639b0a2",
+    "revision": "3fbf1f364320abdb3e16420c673c9759",
     "url": "/alleppo-sweets/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alleppo-sweets/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "a5b7adccf39a4f97946a",
+    "revision": "4ca5a81245c9039d266a",
     "url": "/alleppo-sweets/static/css/main.3043d135.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alleppo-sweets/static/js/2.f81de96d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5b7adccf39a4f97946a",
-    "url": "/alleppo-sweets/static/js/main.6a9ffd68.chunk.js"
+    "revision": "4ca5a81245c9039d266a",
+    "url": "/alleppo-sweets/static/js/main.13e89380.chunk.js"
   },
   {
     "revision": "f8d097691254cffdf005",
