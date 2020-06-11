@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/aleppo-sweets/static/css/main.47e9e992.chunk.css",
-    "main.js": "/aleppo-sweets/static/js/main.5835e5a6.chunk.js",
-    "main.js.map": "/aleppo-sweets/static/js/main.5835e5a6.chunk.js.map",
-    "runtime-main.js": "/aleppo-sweets/static/js/runtime-main.3b3ee3f5.js",
-    "runtime-main.js.map": "/aleppo-sweets/static/js/runtime-main.3b3ee3f5.js.map",
-    "static/css/2.de424728.chunk.css": "/aleppo-sweets/static/css/2.de424728.chunk.css",
-    "static/js/2.f81de96d.chunk.js": "/aleppo-sweets/static/js/2.f81de96d.chunk.js",
-    "static/js/2.f81de96d.chunk.js.map": "/aleppo-sweets/static/js/2.f81de96d.chunk.js.map",
-    "index.html": "/aleppo-sweets/index.html",
-    "precache-manifest.6c46e5e651890902326c18596ce515fb.js": "/aleppo-sweets/precache-manifest.6c46e5e651890902326c18596ce515fb.js",
-    "service-worker.js": "/aleppo-sweets/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/aleppo-sweets/static/css/2.de424728.chunk.css.map",
-    "static/css/main.47e9e992.chunk.css.map": "/aleppo-sweets/static/css/main.47e9e992.chunk.css.map",
-    "static/js/2.f81de96d.chunk.js.LICENSE.txt": "/aleppo-sweets/static/js/2.f81de96d.chunk.js.LICENSE.txt",
-    "static/media/salad.jpg": "/aleppo-sweets/static/media/salad.13f06f70.jpg"
+    "main.css": "/alleppo-sweets/static/css/main.47e9e992.chunk.css",
+    "main.js": "/alleppo-sweets/static/js/main.c3639b4f.chunk.js",
+    "main.js.map": "/alleppo-sweets/static/js/main.c3639b4f.chunk.js.map",
+    "runtime-main.js": "/alleppo-sweets/static/js/runtime-main.93125de0.js",
+    "runtime-main.js.map": "/alleppo-sweets/static/js/runtime-main.93125de0.js.map",
+    "static/css/2.de424728.chunk.css": "/alleppo-sweets/static/css/2.de424728.chunk.css",
+    "static/js/2.0f05c4c7.chunk.js": "/alleppo-sweets/static/js/2.0f05c4c7.chunk.js",
+    "static/js/2.0f05c4c7.chunk.js.map": "/alleppo-sweets/static/js/2.0f05c4c7.chunk.js.map",
+    "index.html": "/alleppo-sweets/index.html",
+    "precache-manifest.0a8d67d3f995688abfc9a4ff4a267591.js": "/alleppo-sweets/precache-manifest.0a8d67d3f995688abfc9a4ff4a267591.js",
+    "service-worker.js": "/alleppo-sweets/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/alleppo-sweets/static/css/2.de424728.chunk.css.map",
+    "static/css/main.47e9e992.chunk.css.map": "/alleppo-sweets/static/css/main.47e9e992.chunk.css.map",
+    "static/js/2.0f05c4c7.chunk.js.LICENSE.txt": "/alleppo-sweets/static/js/2.0f05c4c7.chunk.js.LICENSE.txt",
+    "static/media/salad.jpg": "/alleppo-sweets/static/media/salad.13f06f70.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b3ee3f5.js",
+    "static/js/runtime-main.93125de0.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.f81de96d.chunk.js",
+    "static/js/2.0f05c4c7.chunk.js",
     "static/css/main.47e9e992.chunk.css",
-    "static/js/main.5835e5a6.chunk.js"
+    "static/js/main.c3639b4f.chunk.js"
   ]
 }
