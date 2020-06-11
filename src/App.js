@@ -5,7 +5,7 @@ import Shop from './Components/Shop'
 import About from './Components/About'
 import Contact from './Components/Contact'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (

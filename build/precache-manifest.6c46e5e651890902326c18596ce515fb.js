@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7778e8ae1bbe770d6a87f5546211d52d",
+    "revision": "aae1c7b8197424f07478340dbaa2d21f",
     "url": "/aleppo-sweets/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aleppo-sweets/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "fd4a48b3733fd640b7ef",
-    "url": "/aleppo-sweets/static/css/main.3043d135.chunk.css"
+    "revision": "39bab5d3a8e276043eb9",
+    "url": "/aleppo-sweets/static/css/main.47e9e992.chunk.css"
   },
   {
     "revision": "3316dc0512328d776dbf",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aleppo-sweets/static/js/2.f81de96d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fd4a48b3733fd640b7ef",
+    "revision": "39bab5d3a8e276043eb9",
     "url": "/aleppo-sweets/static/js/main.5835e5a6.chunk.js"
   },
   {
