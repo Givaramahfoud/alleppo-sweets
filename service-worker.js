@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/alleppo-sweets/precache-manifest.3d320863df7825d1173cae3510eb4a52.js"
+  "/alleppo-sweets/precache-manifest.78de746bbc9534c3184e6c8c343c841c.js"
 );
 
 self.addEventListener('message', (event) => {
