@@ -26,7 +26,7 @@
 }
 
 .navs {
-	color:#fff;
+	color: #fff;
 }
 
 .navs:hover {
@@ -264,13 +264,19 @@
 
 	.openSlide4 {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap ;
+		overflow: auto;
 		width: 200%;
 		transform: translateX(-55%);
 	}
 
 	.cardStyle4 {
-		flex: 20%;
+		/* flex-basis: 95px; */
+		/* flex: 20%; */
+	}
+
+	#scrollCard {
+		
 	}
 
 	.openSlideTmr {
@@ -286,7 +292,6 @@
 }
 
 @media screen and (min-width: 776px) and (max-width: 993px) {
-
 	.openSlide {
 		display: flex;
 		flex-wrap: wrap;
@@ -353,9 +358,8 @@
 }
 
 /* div.modal-content { */
-	/* width: 85%; */
+/* width: 85%; */
 /* } */
-
 
 /* ! Contact page */
 

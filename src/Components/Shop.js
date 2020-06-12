@@ -472,8 +472,8 @@ export default function Shop() {
                             <div className='openSlide4'>
 
                                 {state.Moksrat.map(title => (
-                                    <div className='cardStyle4'>
-                                        <button className='btns' >
+                                    <div className='cardStyle4' >
+                                        <button className='btns' id='scrollCard'  >
                                             <CardImg src={Salad} alt="Card image cap" />
                                             <CardTitle className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</CardTitle>
                                         </button>
@@ -665,6 +665,8 @@ export default function Shop() {
                             </div>
                         </Collapse>
                     </div>
+
+                    
 
                     {/* <div className={isOpen13 ? 'open' : 'cards'}>
                         <button onClick={toggle13} className='btns'>
