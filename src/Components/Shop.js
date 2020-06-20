@@ -11,6 +11,8 @@ import {
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import Salad from '../Pics/salad.jpg'
+import Inter from '../Pics/intersets.jpg'
+import Givara from '../Pics/Givara_Mahfoud.png'
 import { Link } from 'react-router-dom';
 
 
@@ -31,6 +33,7 @@ export default function Shop() {
         setIsOpen11(!toggle11)
         setIsOpen12(!toggle12)
         setIsOpen13(!toggle13)
+        setModal(!toggleModal)
     }
 
     const [isOpen2, setIsOpen2] = useState(false);
@@ -241,7 +244,17 @@ export default function Shop() {
 
     const [modal, setModal] = useState(false);
 
-    const toggleModal = () => setModal(!modal);
+    const toggleModal = (e) => {
+        setModal(!modal);
+        document.querySelector('.popup').display = 'none'
+    }
+
+    const [pic, setPic] = useState('');
+    const changePic = (e) => {
+        const addPic = document.getElementById('addPic');
+        addPic.style.width = '200%'
+
+    }
 
 
     const [state] = useState({
@@ -373,17 +386,25 @@ export default function Shop() {
 
             {/* the container of the Cards */}
             <div className='container'>
+                {/* <div className='popup'>
+                    <div className='popupChild'>
+                        <img src={Inter} alt="Card image cap" width='50%' className='popupImg1' />
+                        <img src={Inter} alt="Card image cap" width='50%' className='popupImg' />
+                        <img src={Inter} alt="Card image cap" width='50%' className='popupImg' />
+                        <img src={Inter} alt="Card image cap" width='50%' className='popupImg' />
+                    </div>
+                </div> */}
                 <section className='cardDeck'>
 
                     <div className={isOpen ? 'open' : 'cards'} >
-                        <button onClick={toggle} className='btns'>
+                        <button onClick={toggle} className='btns' >
 
                             <img src={Salad} alt="Card image cap" width='200px' className='imgSize' />
 
                             <p className='titles'>حلو ناشف</p>
                         </button>
 
-                        <Collapse isOpen={isOpen}>
+                        <Collapse isOpen={isOpen} >
                             <div className='openSlide'>
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
@@ -391,20 +412,6 @@ export default function Shop() {
                                             <CardImg src={Salad} alt="Card image cap" width='50%' />
                                             <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
                                         </button>
-                                        <Modal isOpen={modal} toggleModal={toggleModal}  className='container'>
-                                            <ModalBody>
-                                                <CardImg src={Salad} alt="Card image cap" width='50%' />
-                                            </ModalBody>
-                                            <ModalFooter className='popup' >
-                                                <div className='popupCards'  onClick={toggleModal}>
-                                                    <CardImg src={Salad} alt="Card image cap" width='50%' />
-                                                    <CardImg src={Salad} alt="Card image cap" width='50%' />
-                                                    <CardImg src={Salad} alt="Card image cap" width='50%' />
-                                                </div>
-
-                                            </ModalFooter>
-                                            <Button color="light" onClick={toggleModal}>Cancel</Button>
-                                        </Modal>
                                     </div>
                                 ))}
                             </div>
@@ -666,7 +673,7 @@ export default function Shop() {
                         </Collapse>
                     </div>
 
-                    
+
 
                     {/* <div className={isOpen13 ? 'open' : 'cards'}>
                         <button onClick={toggle13} className='btns'>

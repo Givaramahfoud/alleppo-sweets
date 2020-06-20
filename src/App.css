@@ -40,12 +40,12 @@
 	justify-items: center;
 	justify-content: space-around;
 	background-color: rgb(12, 11, 1);
-	padding: 20px;
+	padding: 10px;
 	position: sticky;
 	bottom: 0px;
 }
 
-/* ! Shop Page */
+/*! Shop Page */
 
 .cardDeck {
 	display: flex;
@@ -57,7 +57,7 @@
 .cards {
 	flex: 20%;
 	min-height: 100px;
-	margin: 6px 10px;
+	margin: 10px 10px;
 }
 
 .open {
@@ -66,9 +66,6 @@
 	z-index: 0;
 }
 
-.collapse {
-	background: transparent;
-}
 
 .openSlide {
 	display: flex;
@@ -78,7 +75,7 @@
 }
 
 .cardStyle {
-	/* flex: 10%; */
+	flex: 10%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 180px;
@@ -104,12 +101,13 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 400%;
-	transform: translateX(-24%);
+	transform: translateX(-24.2%);
 	background: transparent;
+
+
 }
 
 .cardStyle2 {
-	/* flex: 1%; */
 	flex-basis: 18%;
 	margin: 10px;
 }
@@ -208,6 +206,7 @@
 	.cardDeck {
 		display: grid;
 		grid-template-columns: repeat(2, 50%);
+
 	}
 
 	.imgSize {
@@ -241,15 +240,14 @@
 	}
 
 	.openSlide2 {
-		display: flex;
-		flex-wrap: wrap;
-		width: 200%;
-		transform: translateX(-55%);
+		display: grid;
+		grid-template-columns: repeat(6, 35%);
+		overflow-y: scroll;
+		margin-left: -185px;
+
 	}
 
-	.cardStyle2 {
-		flex: 25%;
-	}
+	.cardStyle2 {}
 
 	.openSlide3 {
 		display: flex;
@@ -264,7 +262,7 @@
 
 	.openSlide4 {
 		display: flex;
-		flex-wrap: nowrap ;
+		flex-wrap: nowrap;
 		overflow: auto;
 		width: 200%;
 		transform: translateX(-55%);
@@ -275,9 +273,7 @@
 		/* flex: 20%; */
 	}
 
-	#scrollCard {
-		
-	}
+	#scrollCard {}
 
 	.openSlideTmr {
 		display: flex;
@@ -353,9 +349,6 @@
 	display: flex;
 }
 
-.show {
-	background-color: transparent;
-}
 
 /* div.modal-content { */
 /* width: 85%; */
