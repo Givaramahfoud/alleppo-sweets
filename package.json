@@ -12,6 +12,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "google-translate-api": "^2.3.0",
     "icons": "^1.0.0",
     "jquery": "^3.5.1",
     "rc-trigger": "^4.2.1",
@@ -20,7 +21,11 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "translate": "^1.1.2",
+    "translation-adapter-ts": "^1.1.0",
+    "translation-google": "^0.2.1",
+    "transliteration": "^2.1.11"
   },
   "scripts": {
     "start": "react-scripts start",

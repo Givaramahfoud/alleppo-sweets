@@ -244,10 +244,7 @@ export default function Shop() {
 
     const [modal, setModal] = useState(false);
 
-    const toggleModal = (e) => {
-        setModal(!modal);
-        document.querySelector('.popup').display = 'none'
-    }
+    const toggleModal = () => setModal(!modal);
 
 
 
@@ -402,10 +399,27 @@ export default function Shop() {
                             <div className='openSlide'>
                                 {state.HelwNashef.map(title => (
                                     <div className='cardStyle'>
-                                        <button className='btns'>
+                                        <button className='btns' onClick={toggleModal}>
                                             <CardImg src={Salad} alt="Card image cap" width='50%' />
                                             <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
                                         </button>
+
+                                        <Modal isOpen={modal} toggle={toggleModal} className='modals'  >
+
+                                            <ModalBody className='modalsBody'>
+                                                <CardImg src={Salad} alt="Card image cap" width='50%' className='modalImg' />
+                                                <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
+                                                <CardImg src={Salad} alt="Card image cap" width='50%' className='modalImg' />
+                                                <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
+                                                <CardImg src={Salad} alt="Card image cap" width='50%' className='modalImg' />
+                                                <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
+                                                <CardImg src={Salad} alt="Card image cap" width='50%' className='modalImg' />
+                                                <p className='CardTitle' >{title.split(" ").slice(0, 4).join(" ")}</p>
+                                            </ModalBody>
+                                            <ModalFooter>
+                                                <Button color="secondary" onClick={toggle} className='btns'>Cancel</Button>
+                                            </ModalFooter>
+                                        </Modal>
                                     </div>
                                 ))}
                             </div>

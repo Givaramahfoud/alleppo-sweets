@@ -8,8 +8,16 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
-const Home = (props) => {
 
+const Home = (props) => {
+    const translation = (e) => {
+        e.preventDefault()
+        const home = document.getElementById('home')
+        if (home.id === 'home') {
+            const translated = home.innerHTML = 'المنزل'
+            sessionStorage.setItem('home', translated)
+        }
+    }
 
     return (
 
@@ -17,7 +25,7 @@ const Home = (props) => {
             {/* Header */}
             <div className='headers'>
 
-                <Link to="/" style={{ textDecoration: 'none' }} className='navs' className='active'>Home</Link>
+                <Link to="/" style={{ textDecoration: 'none' }} className='navs' className='active' id='home'>Home</Link>
 
                 <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' >shop</Link>
 
@@ -25,9 +33,13 @@ const Home = (props) => {
 
                 <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>contact</Link>
 
+                <div className='langs'>
+                    <a href="#eng" style={{ textDecoration: 'none' }} className='lang navs' >EN</a>
+                    <a href="#ar" style={{ textDecoration: 'none' }} className='lang navs' onClick={translation}> AR</a>
+                </div>
             </div>
-           
-                <h1 className='homeActive'>Home</h1>
+
+            <h1 className='homeActive'>Home</h1>
 
             {/* Footer */}
             <div color="dark" expand="md" className='footer'>
@@ -41,3 +53,29 @@ const Home = (props) => {
 }
 
 export default Home;
+
+
+
+
+
+
+// const language = {
+//     ar: {
+//         home: 'المنزل'
+//     },
+//     en: {
+//         home: 'Home'
+//     }
+// }
+
+// if (window.location.hash) {
+//     if (window.location.hash === '#ar') {
+//         const home = document.getElementById('home')
+//         home.textContent = language.ar.home
+//     }
+// }
+// const changeLanguage = (e) => {
+//     const dataReload = document.querySelectorAll('[data-reload]')
+//     dataReload.forEach(() => window.location.reload(true))
+//     e.preventDefault()
+// }
