@@ -75,10 +75,37 @@
 }
 
 .cardStyle {
-	flex: 10%;
+	/* flex: 10%; */
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 180px;
+	margin: 5px;
+}
+
+.openSlideCoffe {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 230%;
+}
+
+.cardStyleCoffe {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 180px;
+	margin: 5px;
+}
+
+.openSlideSakaker {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 300%;
+	transform: translateX(-15%);
+}
+
+.cardStyleSakaker {
+	flex: 1;
 	margin: 5px;
 }
 
@@ -96,18 +123,16 @@
 	margin: 5px;
 }
 
-.openSlide2 {
+.openSlideRaha {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 400%;
 	transform: translateX(-24.2%);
 	background: transparent;
-
-
 }
 
-.cardStyle2 {
+.cardStyleRaha {
 	flex-basis: 18%;
 	margin: 10px;
 }
@@ -125,7 +150,7 @@
 	margin: 10px;
 }
 
-.openSlide4 {
+.openSlideMokassarat {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -134,11 +159,9 @@
 	background: transparent;
 }
 
-.cardStyle4 {
+.cardStyleMokassarat {
 	flex-basis: 18%;
-	/* flex: 10%; */
 	margin: 10px;
-	/* transform: translateX(-300%); */
 }
 
 .openSlideTmr {
@@ -206,7 +229,6 @@
 	.cardDeck {
 		display: grid;
 		grid-template-columns: repeat(2, 50%);
-
 	}
 
 	.imgSize {
@@ -229,6 +251,28 @@
 		flex: 30%;
 	}
 
+	.openSlideCoffe {
+		display: flex;
+		flex-wrap: wrap;
+		width: 230%;
+		transform: translateX(-55%);
+	}
+
+	.cardStyleCoffe {
+		flex: 1;
+	}
+
+	.openSlideSakaker {
+		display: flex;
+		flex-wrap: wrap;
+		width: 220%;
+		transform: translateX(-55%);
+	}
+
+	.cardStyleSakaker {
+		flex: 30%;
+	}
+
 	.openSlideBzorat {
 		display: flex;
 		flex-wrap: wrap;
@@ -239,15 +283,59 @@
 		flex: 30%;
 	}
 
-	.openSlide2 {
-		display: grid;
-		grid-template-columns: repeat(6, 35%);
-		overflow-y: scroll;
-		margin-left: -185px;
+	/*? Scroll  */
 
+	.hide-scroll {
+		display: grid;
+		/* grid-template-columns: var(--gutter) 100% var(--gutter); */
+		grid-template-columns: repeat(6, 100%);
+		grid-template-rows: repeat(2, 20%);
+		align-content: start;
 	}
 
-	.cardStyle2 {}
+	.openSlideRaha {
+		overflow-y: hidden;
+		transform: translateX(-52%);
+		width: 350px;
+		display: grid;
+		grid-template-columns: repeat(6, 35%);
+		grid-template-rows: repeat(2, 50%);
+		min-height: 140px;
+	}
+
+	.cardStyleRaha {
+		display: grid;
+		transform: translateX(170%);
+		grid-template-columns: repeat(6, 1%);
+		grid-template-rows: repeat(2, 10%);
+	}
+
+	.hide-scroll>* {
+		grid-row: 10/ -10;
+	}
+
+	.cardStyleRaha>.full {
+		grid-column: 10 / -10;
+	}
+
+	.full:before,
+	.full:after {
+		content: '';
+		width: 10px;
+	}
+
+	.scrlItem {
+		scroll-snap-align: center;
+		padding: calc(var(--gutter) / 2 * 0.2);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	:root {
+		--gutter: 20px;
+	}
 
 	.openSlide3 {
 		display: flex;
@@ -260,20 +348,26 @@
 		flex: 20%;
 	}
 
-	.openSlide4 {
-		display: flex;
-		flex-wrap: nowrap;
-		overflow: auto;
-		width: 200%;
-		transform: translateX(-55%);
+	.openSlideMokassarat {
+		overflow-y: hidden;
+		transform: translateX(-52%);
+		width: 350px;
+		display: grid;
+		grid-template-columns: repeat(6, 35%);
+		grid-template-rows: repeat(2, 50%);
+		min-height: 140px;
 	}
 
-	.cardStyle4 {
-		/* flex-basis: 95px; */
-		/* flex: 20%; */
+	.cardStyleMokassarat {
+		display: grid;
+		transform: translateX(170%);
+		grid-template-columns: repeat(6, 1%);
+		grid-template-rows: repeat(2, 10%);
 	}
 
-	#scrollCard {}
+	.cardStyleMokassarat>.full {
+		grid-column: 10 / -10;
+	}
 
 	.openSlideTmr {
 		display: flex;
@@ -307,13 +401,13 @@
 		transform: translateX(-100%);
 	}
 
-	.openSlide2 {
+	.openSlideRaha {
 		display: flex;
 		flex-wrap: wrap;
 		width: 320%;
 	}
 
-	.cardStyle2 {
+	.cardStyleRaha {
 		display: flex;
 		flex-wrap: wrap;
 		flex-basis: 200px;
@@ -329,7 +423,7 @@
 		flex: 25%;
 	}
 
-	.openSlide4 {
+	.cardStyleMokassarat {
 		width: 300%;
 		transform: translateX(5%);
 	}
