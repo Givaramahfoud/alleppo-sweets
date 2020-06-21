@@ -10,12 +10,46 @@ import { Link } from 'react-router-dom';
 
 
 const Home = (props) => {
-    const translation = (e) => {
+
+    //! translation to Arabic 
+    const translationAr = (e) => {
         e.preventDefault()
         const home = document.getElementById('home')
+        const shop = document.getElementById('shop')
+        const about = document.getElementById('about')
+        const contact = document.getElementById('contact')
         if (home.id === 'home') {
-            const translated = home.innerHTML = 'المنزل'
-            sessionStorage.setItem('home', translated)
+            const translatedAr = {
+                home: home.innerHTML = 'المنزل',
+                shop: shop.innerHTML = 'المتجر',
+                about: about.innerHTML = 'حول',
+                contact: contact.innerHTML = 'تواصل'
+            }
+            localStorage.setItem('home', translatedAr.home)
+            localStorage.setItem('shop', translatedAr.shop)
+            localStorage.setItem('about', translatedAr.about)
+            localStorage.setItem('contact', translatedAr.contact)
+        }
+    }
+
+    //! translation to English
+    const translationEn = (e) => {
+        e.preventDefault()
+        const home = document.getElementById('home')
+        const shop = document.getElementById('shop')
+        const about = document.getElementById('about')
+        const contact = document.getElementById('contact')
+        if (shop.id === 'shop') {
+            const translatedEn = {
+                home: home.innerHTML = 'home',
+                shop: shop.innerHTML = 'shop',
+                about: about.innerHTML = 'about',
+                contact: contact.innerHTML = 'contact'
+            }
+            localStorage.setItem('home', translatedEn.home)
+            localStorage.setItem('shop', translatedEn.shop)
+            localStorage.setItem('about', translatedEn.about)
+            localStorage.setItem('contact', translatedEn.contact)
         }
     }
 
@@ -27,15 +61,15 @@ const Home = (props) => {
 
                 <Link to="/" style={{ textDecoration: 'none' }} className='navs' className='active' id='home'>Home</Link>
 
-                <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' >shop</Link>
+                <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' id='shop' >shop</Link>
 
-                <Link to="/about" style={{ textDecoration: 'none' }} className='navs'>about</Link>
+                <Link to="/about" style={{ textDecoration: 'none' }} className='navs' id='about'>about</Link>
 
-                <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>contact</Link>
+                <Link to="/contact" style={{ textDecoration: 'none' }} className='navs' id='contact'>contact</Link>
 
                 <div className='langs'>
-                    <a href="#eng" style={{ textDecoration: 'none' }} className='lang navs' >EN</a>
-                    <a href="#ar" style={{ textDecoration: 'none' }} className='lang navs' onClick={translation}> AR</a>
+                    <a href="#eng" style={{ textDecoration: 'none' }} className='lang navs' onClick={translationEn} >EN</a>
+                    <a href="#ar" style={{ textDecoration: 'none' }} className='lang navs' onClick={translationAr}> AR</a>
                 </div>
             </div>
 

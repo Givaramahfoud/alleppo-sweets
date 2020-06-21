@@ -359,20 +359,65 @@ export default function Shop() {
 
     })
 
+    //! translation to Arabic 
+    const translationAr = (e) => {
+        e.preventDefault()
+        const home = document.getElementById('home')
+        const shop = document.getElementById('shop')
+        const about = document.getElementById('about')
+        const contact = document.getElementById('contact')
+        if (home.id === 'home') {
+            const translatedAr = {
+                home: home.innerHTML = 'المنزل',
+                shop: shop.innerHTML = 'المتجر',
+                about: about.innerHTML = 'حول',
+                contact: contact.innerHTML = 'تواصل'
+            }
+            localStorage.setItem('home', translatedAr.home)
+            localStorage.setItem('shop', translatedAr.shop)
+            localStorage.setItem('about', translatedAr.about)
+            localStorage.setItem('contact', translatedAr.contact)
+        }
+    }
+
+    //! translation to English
+    const translationEn = (e) => {
+        e.preventDefault()
+        const home = document.getElementById('home')
+        const shop = document.getElementById('shop')
+        const about = document.getElementById('about')
+        const contact = document.getElementById('contact')
+        if (shop.id === 'shop') {
+            const translatedEn = {
+                home: home.innerHTML = 'home',
+                shop: shop.innerHTML = 'shop',
+                about: about.innerHTML = 'about',
+                contact: contact.innerHTML = 'contact'
+            }
+            localStorage.setItem('home', translatedEn.home)
+            localStorage.setItem('shop', translatedEn.shop)
+            localStorage.setItem('about', translatedEn.about)
+            localStorage.setItem('contact', translatedEn.contact)
+        }
+    }
 
     return (
         <div>
             {/* Header */}
-            <div className=' headers '>
+            <div className='headers'>
 
-                <Link to="/" style={{ textDecoration: 'none' }} className='navs'>Home</Link>
+                <Link to="/" style={{ textDecoration: 'none' }} className='navs'  id='home'>Home</Link>
 
-                <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' className='active'>shop</Link>
+                <Link to="/shop" style={{ textDecoration: 'none' }} className='navs' id='shop' className='active' >shop</Link>
 
-                <Link to="/about" style={{ textDecoration: 'none' }} className='navs'>about</Link>
+                <Link to="/about" style={{ textDecoration: 'none' }} className='navs' id='about'>about</Link>
 
-                <Link to="/contact" style={{ textDecoration: 'none' }} className='navs'>contact</Link>
+                <Link to="/contact" style={{ textDecoration: 'none' }} className='navs' id='contact'>contact</Link>
 
+                <div className='langs'>
+                    <a href="#eng" style={{ textDecoration: 'none' }} className='lang navs' onClick={translationEn} >EN</a>
+                    <a href="#ar" style={{ textDecoration: 'none' }} className='lang navs' onClick={translationAr}> AR</a>
+                </div>
             </div>
 
             {/* the container of the Cards */}
